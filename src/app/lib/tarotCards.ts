@@ -1,0 +1,96 @@
+export interface TarotCard {
+  name: string;
+  meaning: string;
+  // TODO: add image later
+  image?: string; 
+}
+
+export const tarotCards: TarotCard[] = [
+  // Major Arcana (22 cards)
+  { name: "The Fool", meaning: "New beginnings, optimism, trust in life" },
+  { name: "The Magician", meaning: "Manifestation, resourcefulness, power" },
+  { name: "The High Priestess", meaning: "Intuition, mystery, subconscious" },
+  { name: "The Empress", meaning: "Nurturing, abundance, creation" },
+  { name: "The Emperor", meaning: "Authority, structure, control" },
+  { name: "The Hierophant", meaning: "Tradition, spiritual guidance" },
+  { name: "The Lovers", meaning: "Love, harmony, choices" },
+  { name: "The Chariot", meaning: "Determination, victory, control" },
+  { name: "Strength", meaning: "Courage, compassion, inner strength" },
+  { name: "The Hermit", meaning: "Solitude, reflection, inner guidance" },
+  { name: "Wheel of Fortune", meaning: "Change, cycles, fate" },
+  { name: "Justice", meaning: "Fairness, truth, law" },
+  { name: "The Hanged Man", meaning: "Pause, surrender, new perspective" },
+  { name: "Death", meaning: "Endings, transformation, renewal" },
+  { name: "Temperance", meaning: "Balance, moderation, purpose" },
+  { name: "The Devil", meaning: "Temptation, materialism, bondage" },
+  { name: "The Tower", meaning: "Upheaval, revelation, awakening" },
+  { name: "The Star", meaning: "Hope, inspiration, serenity" },
+  { name: "The Moon", meaning: "Illusion, fear, subconscious" },
+  { name: "The Sun", meaning: "Joy, success, positivity" },
+  { name: "Judgement", meaning: "Rebirth, inner calling, renewal" },
+  { name: "The World", meaning: "Completion, fulfillment, cycles" },
+
+  // Minor Arcana – Cups (Emotions, relationships)
+  { name: "Ace of Cups", meaning: "Love, new relationships, intuition" },
+  { name: "Two of Cups", meaning: "Partnership, mutual attraction" },
+  { name: "Three of Cups", meaning: "Celebration, friendship, community" },
+  { name: "Four of Cups", meaning: "Apathy, contemplation, dissatisfaction" },
+  { name: "Five of Cups", meaning: "Regret, loss, focusing on negatives" },
+  { name: "Six of Cups", meaning: "Nostalgia, childhood memories, reunion" },
+  { name: "Seven of Cups", meaning: "Choices, fantasy, illusion" },
+  { name: "Eight of Cups", meaning: "Leaving behind, seeking deeper purpose" },
+  { name: "Nine of Cups", meaning: "Contentment, wish fulfillment" },
+  { name: "Ten of Cups", meaning: "Happiness, family, domestic bliss" },
+  { name: "Page of Cups", meaning: "Creative beginnings, romance, intuition" },
+  { name: "Knight of Cups", meaning: "Idealism, romantic offers, action on feelings" },
+  { name: "Queen of Cups", meaning: "Empathy, emotional stability" },
+  { name: "King of Cups", meaning: "Emotional maturity, compassion" },
+
+  // Minor Arcana – Wands (Creativity, energy)
+  { name: "Ace of Wands", meaning: "Inspiration, new opportunities, growth" },
+  { name: "Two of Wands", meaning: "Planning, decisions, future vision" },
+  { name: "Three of Wands", meaning: "Expansion, looking ahead, leadership" },
+  { name: "Four of Wands", meaning: "Celebration, harmony, community" },
+  { name: "Five of Wands", meaning: "Conflict, competition, tension" },
+  { name: "Six of Wands", meaning: "Success, recognition, victory" },
+  { name: "Seven of Wands", meaning: "Defending position, perseverance" },
+  { name: "Eight of Wands", meaning: "Rapid action, movement, communication" },
+  { name: "Nine of Wands", meaning: "Resilience, persistence, last stand" },
+  { name: "Ten of Wands", meaning: "Burden, responsibility, hard work" },
+  { name: "Page of Wands", meaning: "Enthusiasm, exploration, freedom" },
+  { name: "Knight of Wands", meaning: "Adventure, impulsiveness, energy" },
+  { name: "Queen of Wands", meaning: "Confidence, determination, warmth" },
+  { name: "King of Wands", meaning: "Leadership, vision, driving force" },
+
+  // Minor Arcana – Swords (Thought, conflict)
+  { name: "Ace of Swords", meaning: "Clarity, breakthroughs, new ideas" },
+  { name: "Two of Swords", meaning: "Stalemate, choices, indecision" },
+  { name: "Three of Swords", meaning: "Heartbreak, sorrow, grief" },
+  { name: "Four of Swords", meaning: "Rest, recovery, contemplation" },
+  { name: "Five of Swords", meaning: "Conflict, defeat, betrayal" },
+  { name: "Six of Swords", meaning: "Transition, recovery, moving on" },
+  { name: "Seven of Swords", meaning: "Deception, stealth, strategy" },
+  { name: "Eight of Swords", meaning: "Restriction, anxiety, feeling trapped" },
+  { name: "Nine of Swords", meaning: "Anxiety, nightmares, despair" },
+  { name: "Ten of Swords", meaning: "Endings, betrayal, hitting rock bottom" },
+  { name: "Page of Swords", meaning: "Curiosity, communication, new ideas" },
+  { name: "Knight of Swords", meaning: "Action, haste, ambition" },
+  { name: "Queen of Swords", meaning: "Independence, unbiased judgment" },
+  { name: "King of Swords", meaning: "Clear thinking, power, authority" },
+
+  // Minor Arcana – Pentacles (Material, work)
+  { name: "Ace of Pentacles", meaning: "Abundance, opportunity, prosperity" },
+  { name: "Two of Pentacles", meaning: "Balance, adaptability, juggling priorities" },
+  { name: "Three of Pentacles", meaning: "Teamwork, collaboration, building" },
+  { name: "Four of Pentacles", meaning: "Control, security, holding onto what you have" },
+  { name: "Five of Pentacles", meaning: "Hardship, poverty, isolation" },
+  { name: "Six of Pentacles", meaning: "Generosity, charity, balance" },
+  { name: "Seven of Pentacles", meaning: "Patience, assessment, long-term growth" },
+  { name: "Eight of Pentacles", meaning: "Learning, apprenticeship, craftsmanship" },
+  { name: "Nine of Pentacles", meaning: "Self-sufficiency, luxury, financial gain" },
+  { name: "Ten of Pentacles", meaning: "Legacy, inheritance, culmination" },
+  { name: "Page of Pentacles", meaning: "Opportunity, study, manifestation" },
+  { name: "Knight of Pentacles", meaning: "Reliability, efficiency, hard work" },
+  { name: "Queen of Pentacles", meaning: "Nurturing, practical, provider" },
+  { name: "King of Pentacles", meaning: "Abundance, leadership, business acumen" },
+];
