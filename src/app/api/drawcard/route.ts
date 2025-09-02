@@ -1,9 +1,7 @@
-import { NextResponse } from 'next/server';
 import { tarotCards } from '../../lib/tarotCards'; 
 
-export function GET() {
+export function drawRandomCard() {
   const randomIndex = Math.floor(Math.random() * tarotCards.length);
-  const card = tarotCards[randomIndex];
-
-  return NextResponse.json(card);
+  
+  return tarotCards[randomIndex]
 }
